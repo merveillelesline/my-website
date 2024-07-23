@@ -1,0 +1,12 @@
+/* Default styles for the content area */
+#content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    #content {
+      width: 90%;
+    }
+  }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+        
+        text-decoration: none;
+       
+        }
+        
+        
+        .nav{
+            background: rgb(51, 9, 30);
+            padding-right: 15px;
+            padding-left: 15px;
+            height: px;
+            width: 100%;
+
+
+        }
+    .navdiv
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navdiv li a{
+       justify-content: center;
+
+    }
+    .Logo{
+        font-size: 35px;
+        font-weight: 600;
+        color: rgb(7, 7, 7);
+    }
+    li{
+        list-style: none;
+        display:inline-block;
+    }
+    li a{
+        color: rgb(253, 253, 253);
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+
+    }
+    button{
+        background-color: rgb(223, 10, 141);
+        margin-left: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        width: 90px;
+        border-color: rgb(230, 236, 236);
+    }
+.checkbtn{
+    font-size: 10px;
+    color: blue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: hide;
+}
+@media( max-width:952px){
+    label.Logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media( max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 600%;
+        height: 100vh;
+        background: blue;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li{
+        font-size: 20px;
+    }
+    a:hover, a .active{
+        background: none;
+        color: blue;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+    
+    </style>
+</head>
+<body>
+   
+    <nav class="nav">
+        <div class="navdiv">
+            <div class="Logo"><a href="#">Logo</a></div>
+    
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-taxi"></i>services</a></li>
+                <li><a href="#"><i class="fa-regular fa-file-audio"></i>page</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i>contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-eject"></i>about</a></li>
+            
+       
+        <button>Sign up</button>
+    </ul> 
+</div>
+    </nav>
+    
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
